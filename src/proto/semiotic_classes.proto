@@ -179,8 +179,8 @@ message Date {
 // 2: "twelve dollars fifty"
 // 3: "twelve united states dollars and fifty cents"
 message Money {
-  optional integer_part = 1;   // The amount of money
-  optional fractional_part = 2;   // The amount of money
+  optional string integer_part = 1;   // The amount of money
+  optional string fractional_part = 2;   // The amount of money
   optional int64 quantity = 3;   // Optional million/billion etc, as an integer
   // Lowercase ISO4217 currency code, e.g. "usd".
   // List of minimally supported set of currencies:
