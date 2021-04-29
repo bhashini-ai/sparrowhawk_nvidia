@@ -181,7 +181,7 @@ message Date {
 message Money {
   optional string integer_part = 1;   // The amount of money
   optional string fractional_part = 2;   // The amount of money
-  optional int64 quantity = 3;   // Optional million/billion etc, as an integer
+  optional string quantity = 3;   // Optional million/billion etc, as an integer
   // Lowercase ISO4217 currency code, e.g. "usd".
   // List of minimally supported set of currencies:
   // grammars/verbalize/universal/money_definition.txt
@@ -229,7 +229,7 @@ message Electronic {
   // Only used if username is set.
   optional string password = 3;
   optional string domain = 4;
-  optional int32 port = 5;
+  optional string port = 5;
   optional string path = 6;
   optional string query_string = 7;
   optional string fragment_id = 8;
