@@ -68,7 +68,7 @@ message Fraction {
   // bilingual languages, e.g. when switching between English and Hindi
   // depending on context.
   optional string code_switch = 7;
-  optional bool negative = 8;
+  optional string negative = 8;
   repeated string field_order = 9;
 }
 
@@ -162,7 +162,7 @@ message Date {
   optional string year = 4;
   optional int32 style = 5 [deprecated = true];
   optional string text = 6 [deprecated = true];
-  optional bool short_year = 7 [deprecated = true];
+  optional string short_year = 7 [deprecated = true];
   optional string era = 8;
   optional string morphosyntactic_features = 9;
   optional bool preserve_order = 10;
