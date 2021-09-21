@@ -37,7 +37,9 @@ message Cardinal {
   // bilingual situations, e.g. when switching between English and Hindi
   // depending on context.
   optional string code_switch = 5;
-  repeated string field_order = 6;
+  optional string open_tag = 6;
+  optional string close_tag = 7;
+  repeated string field_order = 8;
 }
 
 // A number that should be read as an ordinal, e.g. "first". The input
