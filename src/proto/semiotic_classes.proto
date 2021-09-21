@@ -54,6 +54,8 @@ message Ordinal {
   // depending on context.
   optional string code_switch = 4;
   repeated string field_order = 5;
+  optional string open_tag = 6;
+  optional string close_tag = 7;
 }
 
 // A number that should be read as a fraction, e.g. "three
@@ -72,6 +74,8 @@ message Fraction {
   optional string code_switch = 7;
   optional bool negative = 8;
   repeated string field_order = 9;
+  optional string open_tag = 10;
+  optional string close_tag = 11;
 }
 
 // A time, given as hours, minutes and seconds. 'style' controls how
@@ -96,6 +100,8 @@ message Time {
   // depending on context.
   optional string code_switch = 11;
   repeated string field_order = 12;
+  optional string open_tag = 13;
+  optional string close_tag = 14;
 }
 
 // A number read out with a decimal point. For example "34.45" is
@@ -122,6 +128,8 @@ message Decimal {
   // depending on context.
   optional string code_switch = 9;
   repeated string field_order = 10;
+  optional string open_tag = 11;
+  optional string close_tag = 12;
 }
 
 // A measure, e.g. 6 feet, 9 meters etc. units are the units of the
@@ -150,6 +158,8 @@ message Measure {
   // depending on context.
   optional string code_switch = 8;
   repeated string field_order = 9;
+  optional string open_tag = 10;
+  optional string close_tag = 11;
 }
 
 // A date, give in day, month year. 'style' could be used to control,
@@ -173,6 +183,8 @@ message Date {
   // depending on context.
   optional string code_switch = 11;
   repeated string field_order = 12;
+  optional string open_tag = 13;
+  optional string close_tag = 14;
 }
 
 // An amount of money, eg. $12.50, £15, etc.
@@ -196,6 +208,8 @@ message Money {
   // depending on context.
   optional string code_switch = 8;
   repeated string field_order = 9;
+  optional string open_tag = 10;
+  optional string close_tag = 11;
 }
 
 // A telephone number.
@@ -218,6 +232,8 @@ message Telephone {
   // depending on context.
   optional string code_switch = 7;
   repeated string field_order = 8;
+  optional string open_tag = 9;
+  optional string close_tag = 10;
 }
 
 // Electronic items such as URLs, email addresses, etc.
@@ -242,6 +258,8 @@ message Electronic {
   // depending on context.
   optional string code_switch = 11;
   repeated string field_order = 12;
+  optional string open_tag = 13;
+  optional string close_tag = 14;
 }
 
 // A token that connects two other tokens, such as the : in 1:1 or
