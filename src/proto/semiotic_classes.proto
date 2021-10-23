@@ -193,7 +193,9 @@ message Money {
   // bilingual languages, e.g. when switching between English and Hindi
   // depending on context.
   optional string code_switch = 8;
-  repeated string field_order = 9;
+  optional string currency_min = 9;
+  optional string currency_maj = 10;
+  repeated string field_order = 11;
 }
 
 // A telephone number.
