@@ -185,7 +185,7 @@ message Money {
   // Lowercase ISO4217 currency code, e.g. "usd".
   // List of minimally supported set of currencies:
   // grammars/verbalize/universal/money_definition.txt
-  required string currency = 4;
+  optional string currency = 4;
   optional int32 style = 5  [deprecated = true];
   optional string morphosyntactic_features = 6;
   optional bool preserve_order = 7;
