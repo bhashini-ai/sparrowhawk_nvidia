@@ -244,6 +244,20 @@ message Electronic {
   repeated string field_order = 12;
 }
 
+message Roman {
+  optional string default_ordinal = 1;
+  optional string default_cardinal = 2;
+  optional string key_cardinal = 3;
+  optional string key_the_ordinal = 4;
+  optional string morphosyntactic_features = 5;
+  optional bool preserve_order = 6;
+  // A string to indicate switching to a separate language, esp. useful for
+  // bilingual languages, e.g. when switching between English and Hindi
+  // depending on context.
+  optional string code_switch = 7;
+  repeated string field_order = 8;
+}
+
 // A token that connects two other tokens, such as the : in 1:1 or
 // the x in 4x3.
 message Connector {
