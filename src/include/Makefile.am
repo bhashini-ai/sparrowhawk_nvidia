@@ -7,6 +7,7 @@ nobase_include_HEADERS =  sparrowhawk/field_path.h \
 		          sparrowhawk/io_utils.h \
 		          sparrowhawk/logger.h \
 		          sparrowhawk/normalizer.h \
+		          sparrowhawk/normalizer_connector.h \
 		          sparrowhawk/numbers.h \
 		          sparrowhawk/protobuf_parser.h \
 		          sparrowhawk/protobuf_serializer.h \

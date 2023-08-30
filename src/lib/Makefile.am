@@ -13,6 +13,7 @@ libsparrowhawk_la_SOURCES = field_path.cc \
                             io_utils.cc \
                             normalizer.cc \
                             normalizer_utils.cc \
+                            normalizer_connector.cc \
                             numbers.cc \
                             protobuf_parser.cc \
                             protobuf_serializer.cc \
